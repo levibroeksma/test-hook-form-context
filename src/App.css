@@ -1,11 +1,43 @@
-.App {
-  text-align: center;
+* {
+  font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  margin: 0;
 }
+
+body {
+  height: 100vh;
+}
+
+.App {
+  text-align: center;
+  /*background-color: #282c34;*/
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-wrapper {
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-wrapper {
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.step-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -14,8 +46,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,14 +56,43 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  color: #fff;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 10px;
+
+}
+
+.waar {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.waar label {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.waar label textarea {
+  min-height: 100px;
+}
+
+.waar label input,
+.waar label textarea
+{
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
 }

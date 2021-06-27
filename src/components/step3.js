@@ -4,7 +4,7 @@ import {useAddRecipe} from "../context/AddRecipeProvider";
 import {useHistory} from "react-router-dom";
 import {useForm} from "react-hook-form";
 
-function AddDirections() {
+function Step3() {
     const { register } = useAddRecipe();
     const {handleSubmit, formState: { errors } } = useForm();
     const [indexes, setIndexes] = useState([0]);
@@ -81,4 +81,4 @@ function AddDirections() {
     )
 }
 
-export default AddDirections;
+export default Step3;

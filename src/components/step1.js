@@ -1,12 +1,12 @@
 import {useAddRecipe} from "../context/AddRecipeProvider";
 
-function Wat(props) {
+function Step1(props) {
 
     const { register } = useAddRecipe();
 
     return (
-        <div>
-            <h3>Wat</h3>
+        <div className="step-wrapper">
+            <h3>Add a title and description</h3>
 
             <label id="titleLabel" htmlFor="title">
                 <input
@@ -31,4 +31,4 @@ function Wat(props) {
     );
 }
 
-export default Wat;
+export default Step1;

@@ -3,7 +3,7 @@ import React, {useState} from "react";
 import { useForm } from "react-hook-form";
 import {BsTrashFill} from "react-icons/bs";
 
-export default function AddIngredients() {
+export default function Step2() {
     const { register } = useAddRecipe();
     const {handleSubmit, formState: { errors } } = useForm();
     const [indexes, setIndexes] = useState([0]);
